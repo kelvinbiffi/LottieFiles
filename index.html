@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset='utf-8'>
+  <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+  <title>LottieFiles</title>
+  <meta name='viewport' content='width=device-width, initial-scale=1'>
+  <link rel='stylesheet' type='text/css' media='screen' href='main.css'>
+  <script src='main.js'></script>
+</head>
+<body>
+  Lottie Files Example
+  <div id="svgContainer">
+    <!-- Lottie Will Be Loaded Here -->
+  </div>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/bodymovin/5.7.5/lottie.min.js" integrity="sha512-0bCDSnaX8FOD9Mq8WbHcDwshXwCB5V4EP+UBu87WQgga2b7lAsuEbaSmIZjH/XEmNhJuhrPbFHemre5HZwrk9w==" crossorigin="anonymous"></script>
+  <script>
+    var svgContainer = document.getElementById('svgContainer');
+    var animItem = bodymovin.loadAnimation({
+      wrapper: svgContainer,
+      animType: 'svg',
+      loop: true,
+      path: 'https://labs.nearpod.com/bodymovin/demo/markus/isometric/markus2.json'
+    });
+  </script>
+</body>
+</html>
